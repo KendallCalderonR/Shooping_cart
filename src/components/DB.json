@@ -1,50 +1,50 @@
 [
     {
-    "productId": "1",
-    "productName": "Product 1",
-    "productImage": "1.png",
-    "productPrice": "25.00"
+    "id": "1",
+    "name": "Product 1",
+    "image": "1.png",
+    "price": "25.00"
   },
   {
-    "productId": "2",
-    "productName": "I'm a Product",
-    "productImage": "2.png",
-    "productPrice": "25.00"
+    "id": "2",
+    "name": "I'm a Product",
+    "image": "2.png",
+    "price": "25.00"
   },
   {
-    "productId": "3",
-    "productName": "I'm a Product",
-    "productImage": "3.png",
-    "productPrice": "25.00"
+    "id": "3",
+    "name": "I'm a Product",
+    "image": "3.png",
+    "price": "25.00"
   },
   {
-    "productId": "4",
-    "productName": "I'm a Product",
-    "productImage": "4.png",
-    "productPrice": "25.00"
+    "id": "4",
+    "name": "I'm a Product",
+    "image": "4.png",
+    "price": "25.00"
   },
   {
-    "productId": "5",
-    "productName": "I'm a Product",
-    "productImage": "5.png",
-    "productPrice": "25.00"
+    "id": "5",
+    "name": "I'm a Product",
+    "image": "5.png",
+    "price": "25.00"
   },
   {
-    "productId": "6",
-    "productName": "I'm a Product",
-    "productImage": "6.png",
-    "productPrice": "25.00"
+    "id": "6",
+    "name": "I'm a Product",
+    "image": "6.png",
+    "price": "25.00"
   },
   {
-    "productId": "7",
-    "productName": "I'm a Product",
-    "productImage": "7.png",
-    "productPrice": "25.00"
+    "id": "7",
+    "name": "I'm a Product",
+    "image": "7.png",
+    "price": "25.00"
   },
   {
-    "productId": "8",
-    "productName": "I'm a Product",
-    "productImage": "8.png",
-    "productPrice": "25.00"
+    "id": "8",
+    "name": "I'm a Product",
+    "image": "8.png",
+    "price": "25.00"
   }
 ]

@@ -10,13 +10,14 @@ function ProductIndex(){
             <div className="ProductIndex">
                 <ul id="Product-index-items">
                     {
-                        data.map((product) => {
+                        data.map((item) => {
                             return(
-                            <ProductCard key={product.productId}
-                                         productId = {product.productId}
-                                         productImage = {product.productImage}
-                                         productName = {product.productName}
-                                         productPrice = {product.productPrice} />
+                            <ProductCard key= {item.id}
+                                         id = {item.id}
+                                         image = {item.image}
+                                         name = {item.name}
+                                         price = {item.price} />
+                                         
                             )
                         })
                     }

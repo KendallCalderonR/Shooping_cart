@@ -1,10 +1,10 @@
 import './CartItem.css';
 import { currencyFormatter } from "../../util/formatting.js";
 
-// eslint-disable-next-line react/prop-types
-export default function CartItem({ name,quantity,price, onIncrease, onDecrease }){
+
+export default function CartItem({name,quantity,price, onIncrease, onDecrease}){
     return (
-        <li className="cart-item" key={name}>
+        <li className="cart-item" >
             <p>{name} - {quantity} x {currencyFormatter.format(price)}</p>
             <p className="cart-item-actions">
                 <button onClick={onDecrease}>-</button>

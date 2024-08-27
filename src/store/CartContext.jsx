@@ -1,18 +1,15 @@
-/* eslint-disable no-unused-vars */
 import { createContext, useReducer } from "react";
 
 const CartContext = createContext({
     items: [],
     addItem: (item) => {},
-    removeItem: (id) => {},
-    clearCart: () => {}
+    removeItem: (id) => {}
 });
 
 function cartReducer(state, action){
     if(action.type === 'ADD_ITEM') {
         //... update state to add items
         const existingCartItemIndex = state.items.findIndex((item) => item.id === action.item.id);
-
         const updatedItems = [...state.items];
 
         if(existingCartItemIndex > -1){
@@ -27,10 +24,6 @@ function cartReducer(state, action){
         } 
 
         return {...state, items: updatedItems};
-    }
-
-    if(action.type === 'CLEAR_CART'){
-        return {...state, items:[]};
     }
 
     if(action.type === 'REMOVE_ITEM'){
@@ -58,7 +51,7 @@ function cartReducer(state, action){
     return state;
 }
 
-// eslint-disable-next-line react/prop-types
+
 export function CartContextProvider({children}) {
 
    const [cart, dispatchCartAction ] =  useReducer(cartReducer, {items: []});
@@ -71,15 +64,10 @@ export function CartContextProvider({children}) {
     dispatchCartAction({type: 'REMOVE_ITEM', id});
    }
 
-   function clearCart(){
-    dispatchCartAction({type: 'CLEAR_CART'});
-   }
-
    const cartContext = {
     items: cart.items,
     addItem,
-    removeItem,
-    clearCart
+    removeItem
    };
 
    console.log(cartContext);
